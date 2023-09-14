@@ -1,0 +1,26 @@
+- type: web
+    plan: free
+    name: Candykingop
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 bot.py
+    repo: https://github.com/Ns-Bots/TG-File-Store.git      
+    branch: V1.2
+    envVars:
+      - key: BOT_TOKEN 
+        sync: false
+      - key: API_KEY 
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: DB_CHANNEL_ID
+        sync: false
+      - key: UPDATE_CHANNEL
+        sync: false
+      - key: OWNER_ID
+        sync: false 
+      - key: IS_PRIVATE
+        sync: false
+      - key: AUTH_CHANNEL
+        sync: false    
+    autoDeploy: true
